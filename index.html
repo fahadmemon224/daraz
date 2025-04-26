@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daraz Clone - Home</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .daraz-orange {
+      color: #F85606;
+    }
+    .product-card {
+      transition: transform 0.2s;
+    }
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+  </style>
+  <!-- You can replace with Tailwind CDN if preferred -->
+  <style>
+    /* Basic reset */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: Arial, sans-serif; background-color: #f4f4f4; }
+    a { text-decoration: none; color: inherit; }
+    /* Header/navbar */
+    .navbar { background-color: #e94f12; color: #fff; padding: 1rem; display: flex; align-items: center; justify-content: space-between; }
+    .navbar .logo { font-size: 1.5rem; font-weight: bold; }
+    .navbar ul { list-style: none; display: flex; gap: 1rem; }
+    .navbar ul li { cursor: pointer; }
+    .navbar input[type="text"] { padding: 0.5rem; width: 300px; border: none; border-radius: 4px; }
+    .navbar button { background-color: #fff; color: #e94f12; border: none; padding: 0.5rem 1rem; border-radius: 4px; cursor: pointer; }
+
+    /* Hero/banner */
+    .hero { background: url('hero.jpg') center/cover no-repeat; height: 300px; display: flex; align-items: center; justify-content: center; color: #fff; }
+    .hero h1 { font-size: 2.5rem; background: rgba(0,0,0,0.5); padding: 1rem; border-radius: 8px; }
+
+    /* Product grid */
+    .products { padding: 2rem; max-width: 1200px; margin: auto; }
+    .products .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 1.5rem; }
+    .product-card { background-color: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); text-align: center; }
+    .product-card img { width: 100%; height: 200px; object-fit: cover; border-radius: 4px; }
+    .product-card .title { font-size: 1rem; margin: 0.5rem 0; }
+    .product-card .price { color: #e94f12; font-size: 1.1rem; font-weight: bold; }
+    .product-card button { background-color: #e94f12; color: #fff; border: none; padding: 0.5rem; border-radius: 4px; cursor: pointer; }
+
+    /* Footer */
+    .footer { background-color: #333; color: #ddd; padding: 1.5rem; text-align: center; margin-top: 2rem; }
+    .footer p { margin-bottom: 0.5rem; }
+    .footer a { color: #e94f12; }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <img width="80" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yLwT8TQ8aF0dMJfuD-LEC3WfUMeZHfzrZw&s" alt="">
+    <div class="logo">Daraz</div>
+
+    <div> <br><br>
+        <input style="align-items: center;" type="text" placeholder="search in daraz">
+        <button>Search</button>
+      </div>
+
+      <ul>
+        <li>save more on app</li>
+        <li>sale on daraz</li>
+        <li>help & support</li>
+        <li>login</li>
+        <li>sign up</li>
+        <li>help & support</li>
+       
+      </ul>
+
+ 
+
+    
+  
+   
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+   <img width="860" src="https://img.lazcdn.com/us/domino/1a5dceb9-f737-4720-9041-14a75f1c8013_PK-1976-688.jpg_2200x2200q80.jpg_.webp" alt="">
+  </section>
+
+  <!-- Products Grid -->
+  <section class="products">
+    <h2>Flash Sale</h2>
+    <div class="grid">
+      <!-- Repeat product cards -->
+      <div class="product-card">
+        <img src="https://img.drz.lazcdn.com/static/pk/p/f8ad7a69b6a6ddb9a2877e474b5d4a17.jpg_400x400q80.jpg_.webp" alt="Product">
+        <div class="title">M10 TWS Bluetooth Air buds</div>
+        <div class="price">Rs.798 </div>
+        <span class="text-sm line-through text-gray-500">1348-43%</span>
+       
+      </div>
+      <div class="product-card">
+        <img src="https://img.drz.lazcdn.com/g/kf/Sdad20109126849a98cddffbba36974d5j.png_400x400q80.png_.webp" alt="Product">
+        <div class="title">Chia Seeds 100 grams</div>
+        <div class="price">Rs. 160
+          <span class="text-sm line-through text-gray-500">190-25%</span>
+           </div>
+        
+      </div>
+      <div class="product-card">
+        <img src="https://img.drz.lazcdn.com/static/pk/p/e50b888d7f01b304bbabaeb16a0fc03d.png_400x400q80.png_.webp" alt="Product">
+        <div class="title">Dawlance Air Conditioner Mega T+ 10 DC</div>
+        <div class="price">Rs. 87,367
+          <span class="text-sm line-through text-gray-500">Rs.101000-13%</span>
+           </div>
+       
+      </div>
+      <div class="product-card">
+        <img src="https://img.drz.lazcdn.com/static/pk/p/8754981cbf9c035ef0e411fa90810bfa.jpg_400x400q80.jpg_.webp" alt="Product">
+        <div class="title">Jenpharm - Anagrow Hair Growth Foamy Serume</div>
+        <div class="price">Rs. 1,230
+          <span class="text-sm line-through text-gray-500">1850-40%</span>
+           </div>
+        
+      </div>
+
+   
+    <div class="product-card">
+      <img src="https://img.drz.lazcdn.com/g/kf/Seac77ce8d9f84c7f877ef4226d21b896W.png_400x400q80.png_.webp" alt="Product">
+      <div class="title">Silicone TV Remote Cover Rabbit Air</div>
+      <div class="price">Rs. 189
+        <span class="text-sm line-through text-gray-500">480-36%</span>
+         </div>
+
+    
+      
+    </div>
+  </section>
+
+
+ <!-- Categories Section -->
+ <section class="container mx-auto p-4">
+  <h2 class="text-xl md:text-2xl font-bold mb-4">Categories</h2>
+  <div class="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-12 gap-4">
+    <!-- Category Card 1 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 1.webp" alt="3D Printers" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">3D Printers</p>
+    </div>
+
+    <!-- Category Card 2 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 2.webp" alt="Pasta, Noodle & Pizza Tools" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Pasta, Noodle & Pizza Tools</p>
+    </div>
+
+    <!-- Category Card 3 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 3.webp" alt="SIM Tools" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">SIM Tools</p>
+    </div>
+
+    <!-- Category Card 4 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 4.webp" alt="Screen Protectors" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Screen Protectors</p>
+    </div>
+
+    <!-- Category Card 5 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 5.webp" alt="Oils" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Oils</p>
+    </div>
+
+    <!-- Category Card 6 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 6.webp" alt="Replacement" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Replacement</p>
+    </div>
+
+    <!-- Category Card 7 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 7.webp" alt="Casserole Pots" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Casserole Pots</p>
+    </div>
+
+    <!-- Category Card 8 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 8.webp" alt="Hoodies & Sweatshirts" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Hoodies & Sweatshirts</p>
+    </div>
+
+    <!-- Category Card 9 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 9.webp" alt="Toy Boxes & Organizers" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Toy Boxes & Organizers</p>
+    </div>
+
+    <!-- Category Card 10 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 10.webp" alt="Dog & Cat Electric Clippers" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Dog & Cat Electric Clippers</p>
+    </div>
+
+    <!-- Category Card 11 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 11.webp" alt="Dining Sets" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Dining Sets</p>
+    </div>
+
+    <!-- Category Card 12 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 12.webp" alt="Microphones" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Microphones</p>
+    </div>
+
+    <!-- Category Card 13 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 13.webp" alt="Leashes & Harnesses" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Leashes & Harnesses</p>
+    </div>
+
+    <!-- Category Card 14 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 14.webp" alt="Scooters" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Scooters</p>
+    </div>
+
+    <!-- Category Card 15 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 15.webp" alt="Donate to Educate" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Donate to Educate</p>
+    </div>
+
+    <!-- Category Card 16 -->
+    <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 16.webp" alt="Equipment Bags" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">Equipment Bags</p>
+    </div>
+  
+     <!-- Category Card 18 -->
+     <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 18.webp" alt="Equipment Bags" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">toys boxes & organiser</p>
+    </div>
+
+     <!-- Category Card 17 -->
+     <div class="category-card bg-white rounded-lg shadow-md overflow-hidden text-center">
+      <img src="catagories 17.webp" alt="Equipment Bags" class="w-full h-24 object-cover">
+      <p class="p-2 text-sm">colourin & drawing</p>
+    </div>
+  </div>
+</div>
+</section>
+  
+   <!-- Just For You Section -->
+   <section class="container mx-auto p-4">
+    <h2 class="text-xl md:text-2xl font-bold mb-4">Just For You</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4">
+      <!-- Product Card 1 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 1.webp" alt="Silicone Suction Pad Phone Holder" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Silicone Suction Pad Phone Holder Self...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.159 <span class="text-sm line-through text-gray-500">-36%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(49)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 2 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 2.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Ocean Silicone Band Strap for Apple Watch...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.149 <span class="text-sm line-through text-gray-500">-70%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(706)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 3 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 3.webp" alt="Pro White TWS Airpods" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Pro White TWS Airpods Sound & High Quality...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.810 <span class="text-sm line-through text-gray-500">-73%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(472)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 4 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 4.webp" alt="GTA Vice City Game" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">GTA Vice City Game Only for Android Mobile</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.30 <span class="text-sm line-through text-gray-500">-85%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(776)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 5 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 5.webp" alt="Positive Summer Men Tracksuit" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Positive Summer Men Tracksuit Trouser and Shi...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.784 <span class="text-sm line-through text-gray-500">-53%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(1846)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 6 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 6.webp" alt="High Quality Black Hand Made Gift" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">High Quality Black Hand Made Gift for Men</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.447 <span class="text-sm line-through text-gray-500">-70%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(42)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 7 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 7.webp" alt="Wireless Headphones P47" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Wireless Headphones, P47 Bluetooth Foldable...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.683 <span class="text-sm line-through text-gray-500">-37%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(217)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 8 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 8.webp" alt="Pack of 3 Silver Stainless Steel Snake Chain" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Pack of 3 Silver Stainless Steel Snake Chain...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.78 <span class="text-sm line-through text-gray-500">-74%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(70)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 9 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 9.webp" alt="2PCs Motion Activated Glow Bike Flashlight" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">2PCs Motion Activated Glow Bike Flashlight Car...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.164 <span class="text-sm line-through text-gray-500">-34%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(191)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 10 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 10.webp" alt="Pack of 10/5 Fruit Plant Extract Moisturizing" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Pack of 10/ 5 Fruit Plant Extract Moisturizing...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.185 <span class="text-sm line-through text-gray-500">-54%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(1033)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 11 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 11.webp" alt="M10, A6s, F2 earbuds Headphones" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">M10, A6s, F2 earbuds Headphones, Handfree...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.379 <span class="text-sm line-through text-gray-500">-76%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(420)</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product Card 13 -->
+       <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 13.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Satin Silk Gown Night Dress For Women Girls 1109 with Bikini Set....Best for Girl.</p>
+          <p class="text-lg font-semibold daraz-orange">Rs. 444
+           <span class="text-sm line-through text-gray-500"> -63%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(64)</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product Card 14 -->
+       <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 14.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">for MenBaby Nail Trimmer Electric Manicure Set With 6 Grinding Pad’s</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.1050 <span class="text-sm line-through text-gray-500">-50%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(465)</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product Card 15 -->
+       <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 15.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">M.K Soft - Black Comfortable Men's Shoes on Synthetic Material SN001 Sneakers for Men</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.999 <span class="text-sm line-through text-gray-500">-55%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(609)</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product Card 16 -->
+       <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 16.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Chia Seeds 150 Grams (Organic and Original) Chia seed By Nuts N Snax</p>
+          <p class="text-lg font-semibold daraz-orange">Rs. 290 <span class="text-sm line-through text-gray-500">-3%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(869)</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product Card 17 -->
+       <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 17.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">2024 New Fashion Ladies Coin Bag Cherry Coin Purse Women Zipper Small wallet short card bag mini square bag Multifunctional bag PU Leather.</p>
+          <p class="text-lg font-semibold daraz-orange">Rs. 299 <span class="text-sm line-through text-gray-500">-57%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(536)</span>
+          </div>
+        </div>
+      </div>
+
+       <!-- Product Card 18 -->
+       <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 18.webp" alt="Ocean Silicone Band Strap for Apple Watch" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">Beautious 5IN1 Super Skin Glowing Serum | 5% Niacinamide, 30% Vitamin C 10%, Vitamin E 10% & HA | 30 ml
+          </p>
+          <p class="text-lg font-semibold daraz-orange">Rs. 279 <span class="text-sm line-through text-gray-500">-44%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(567)</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Product Card 12 -->
+      <div class="product-card bg-white rounded-lg shadow-md overflow-hidden">
+        <img src="card 12.webp" alt="3D New Design Wooden Wall Clock" class="w-full h-40 object-cover">
+        <div class="p-2">
+          <p class="text-sm truncate">3D New Design Wooden Wall Clock For...</p>
+          <p class="text-lg font-semibold daraz-orange">Rs.109 <span class="text-sm line-through text-gray-500">-89%</span></p>
+          <div class="flex items-center">
+            <div class="flex text-yellow-400">
+              ★★★★★
+            </div>
+            <span class="text-xs text-gray-500 ml-1">(383)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<!-- footer Section -->
+<footer class="p-6">
+  <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6">
+    <!-- Customer Care -->
+    <div>
+      <h3 class="text-lg font-semibold text-blue-900 mb-2">Customer Care</h3>
+      <ul class="text-sm text-gray-600 space-y-1">
+        <li><a href="#" class="hover:underline">Help Center</a></li>
+        <li><a href="#" class="hover:underline">How to Buy</a></li>
+        <li><a href="#" class="hover:underline">Corporate & Bulk Purchasing</a></li>
+        <li><a href="#" class="hover:underline">Returns & Refunds</a></li>
+        <li><a href="#" class="hover:underline">Daraz Shop</a></li>
+        <li><a href="#" class="hover:underline">Contact Us</a></li>
+        <li><a href="#" class="hover:underline">Purchase Protection</a></li>
+        <li><a href="#" class="hover:underline">Daraz Pick up Points</a></li>
+      </ul>
+    </div>
+
+    <!-- Daraz -->
+    <div>
+      <h3 class="text-lg font-semibold text-blue-900 mb-2">Daraz</h3>
+      <ul class="text-sm text-gray-600 space-y-1">
+        <li><a href="#" class="hover:underline">About Us</a></li>
+        <li><a href="#" class="hover:underline">Digital Payments</a></li>
+        <li><a href="#" class="hover:underline">Daraz Donates</a></li>
+        <li><a href="#" class="hover:underline">Daraz Blog</a></li>
+        <li><a href="#" class="hover:underline">Terms & Conditions</a></li>
+        <li><a href="#" class="hover:underline">Privacy Policy</a></li>
+        <li><a href="#" class="hover:underline">NTN Number: 4010218-6</a></li>
+        <li><a href="#" class="hover:underline">STRN Number: 1700401218118</a></li>
+        <li><a href="#" class="hover:underline">Online Shopping</a></li>
+        <li><a href="#" class="hover:underline">Online Grocery Shopping</a></li>
+        <li><a href="#" class="hover:underline">Daraz Exclusive</a></li>
+        <li><a href="#" class="hover:underline">Daraz University</a></li>
+        <li><a href="#" class="hover:underline">Sell on Daraz</a></li>
+        <li><a href="#" class="hover:underline">Join Daraz Affiliate Program</a></li>
+      </ul>
+    </div>
+
+     <!-- App Download -->
+     <div>
+      <h3 class="text-lg font-semibold text-blue-900 mb-2">Happy Shopping</h3>
+      <p class="text-sm text-gray-600 mb-2">Download App</p>
+      <div class="flex space-x-2 mb-2">
+        <!-- Placeholder for App Store and Google Play icons -->
+        <a href="#" class="bg-gray-200 p-2 rounded">
+          <span class="text-sm">App Store</span>
+        </a>
+        <a href="#" class="bg-gray-200 p-2 rounded">
+          <span class="text-sm">Google Play</span>
+        </a>
+      </div>
+      <p class="text-sm text-gray-600 mb-2">Android App</p>
+      <div>
+        <a href="#" class="bg-red-600 text-white px-4 py-1 rounded inline-block">
+          <span class="text-sm">Explore it on AppGallery</span>
+        </a>
+      </div>
+    </div>
+    </div>
+  
+    </div>
+  </footer>
+
+  <!-- Online Shopping Section -->
+  <section class="container mx-auto p-4">
+    <h2 class="text-2xl md:text-3xl font-bold daraz-blue mb-4">How Daraz Transformed Online Shopping in Pakistan</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <!-- Column 1 -->
+      <div>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">How Daraz Transformed Online Shopping in Pakistan</h3>
+        <p class="text-sm text-gray-600 mb-2">
+          Daraz first made waves in Pakistan’s e-commerce market after its introduction in 2012. We have since grown to become Pakistan’s largest platform for online shopping with a network spread across the country, including Pakistan, Bangladesh, Sri Lanka, Myanmar, and Daraz.com.np. Our vision was to provide a safe, efficient online marketplace platform for vendors and customers across the country to come together. We started off exclusively as an online fashion retail platform and over the years expanded to become a complete one-stop solution for all your buying needs. Daraz prides itself on not being just another ecommerce venture in Asia. We work tirelessly to make sure that we provide users with the best online shopping experience and value for their purchases. Whether you shop online through our website or our online shopping mobile App, you can expect easy navigation, customized recommendations, and a smooth online shopping experience.
+        </p>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">What Makes Us Different from Other Online Shopping Platforms?</h3>
+        <h4 class="text-md font-semibold mb-1">Select from the Largest Online Marketplace in Pakistan</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          With over 15 million products to select from, Daraz offers its customers the most comprehensive listing of products in the country. Whether you’re looking for electronics, apparel, appliances, or groceries – there is something for everyone.
+        </p>
+        <h4 class="text-md font-semibold mb-1">Hassle Free Delivery</h4>
+        <p class="text-sm text-gray-600">
+          Online shopping is only as good as its execution and Daraz promises hassle free delivery right from the moment you order to when your package is dropped at your door. We cater to both major and smaller cities alike, and give you the choice to track your package as it makes its way to you so you always know your order status. If you are unsatisfied with any aspect of your order, we have a simple 7-day return or exchange policy.
+        </p>
+      </div>
+
+      <!-- Column 2 -->
+      <div>
+        <p class="text-sm text-gray-600 mb-2">
+          <strong class="font-semibold">Daraz Wallet</strong> – a closed loop digital wallet that offers you a secure, easy way to make payments. We also have easy paisa & Jazzcash payment method for our customers’ ease
+        </p>
+        <p class="text-sm text-gray-600 mb-2">
+          <strong class="font-semibold">Shop from Verified Vendors</strong><br>
+          Daraz understands that online shopping in Pakistan comes with its fair share of risks. This is why with Daraz Marketplace and Daraz Mall customers have the security of choosing from verified vendors and brands from Karachi, Lahore, Islamabad and all across Pakistan. Now you’ll never have to second guess authenticity because Daraz makes sure to do it for you!
+        </p>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">Shop Around the World with the Daraz Global Collection</h3>
+        <p class="text-sm text-gray-600 mb-2">
+          International sellers and local convenience come together with Daraz Global collection. Get the chance to shop online from vendors around the world without leaving the Daraz website. Featuring thousands of novelty gadgets and imported products, Daraz Global Collection offers you a selection of products that you won’t find anywhere else when you’re online shopping in Pakistan.
+        </p>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">Avail Exclusive Discounts, Offers, and Promotions</h3>
+        <p class="text-sm text-gray-600 mb-2">
+          Online shopping with Daraz means you get the chance to avail exclusive online-only promotional packages as well as discount vouchers from our vendors when you shop from their customized product offers – all curated with the help of our advanced AI technology so you always have deals you’ll actually be interested in!
+        </p>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">Buy Value, not Just Goods with Daraz Care</h3>
+        <p class="text-sm text-gray-600">
+          Daraz does not just cater online shopping in Pakistan but also aims to simplify the way you give back to society. With charities spanning across sectors of education, health care, environmental preservation, and shelters, you can choose to make a big difference with a few, simple clicks.
+        </p>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">Simply Corporate Purchases</h3>
+        <p class="text-sm text-gray-600">
+          With your corporate purchases need
+        </p>
+      </div>
+
+      <!-- Column 3 -->
+      <div>
+        <h3 class="text-lg font-semibold daraz-blue mb-2">Top Categories & Brands</h3>
+        <h4 class="text-md font-semibold mb-1">Mobile Phones in Pakistan</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Apple iPhones, Honor Mobiles, Huawei Mobiles, Infinix Mobiles, Redmi Mobiles, Xioami Mi Mobiles, Nokia Mobiles, Oppo Mobile Phones, Realme Mobiles, Samsung Mobile Phones, Vivo Mobile Phones, Mobile Accessories, Smart Watches
+        </p>
+        <h4 class="text-md font-semibold mb-1">Latest Laptops</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Dell Laptops, HP Laptops, Lenovo Laptops, Mouse, Gaming Graphic Cards, Lenovo ideapad 3, Macbook Pro 13, HP Probook 650 G2
+        </p>
+        <h4 class="text-md font-semibold mb-1">LED TV</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Changhong Led Tv, LG Led Tv, Samsung Led Tv, Sony Led Tv, TCL LED TVs
+        </p>
+        <h4 class="text-md font-semibold mb-1">Home Appliances</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Microwave oven, Geyser, Heater, Refrigerator, Deep Freezers, Generators, Water Dispensers, Fans, Room Cooler, Table Fans, Wall Fans, Exhaust Fans, Pedestal Fans, Window Ac, Solar Panel
+        </p>
+        <h4 class="text-md font-semibold mb-1">DSLR Cameras</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Camera tripods, Drones, IP & CCTV Cameras, Nikon D5000, Nikon D7000, Nikon D200, Canon 1200D, Fujifilm instax mini 11, Canon M50
+        </p>
+        <h4 class="text-md font-semibold mb-1">Health & Beauty</h4>
+        <p class="text-sm text-gray-600">
+          sunisa foundation, janssen facial Kit, Glutathione Cream, Sauvage, Glutathione Tablets, Glutathione Soap, Infrared thermometers, N95 Mask
+        </p>
+      </div>
+
+      <!-- Column 4 -->
+      <div>
+        <h4 class="text-md font-semibold mb-1">Trending</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Online Bills, Core i5 Laptop, GTX 1060, Samsung A32, Samsung A71, Samsung A72, Samsung A21, Samsung A31, Samsung A52, Samsung A71, Samsung S20 Ultra 5G, Samsung S20, Samsung S20 Ultra, Samsung Z Flip, Tecno Camon 17, Tecno Spark 4, Tecno Spark 6, Vivo X70 Pro, Vivo Y53, Vivo Y12, Vivo Y12s, Vivo Y20, Vivo Y51, Vivo Y51s, Vivo Y91, Vivo Y90
+        </p>
+        <h4 class="text-md font-semibold mb-1">Women's Fashion</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Al-Karam Studio, Warda, Saltex, Bonanza Satrangi, Edenrobe, Firdous, Junaid Jamshed, Limelight, Sana Safinaz, Mahru, Pushup Bra, Women Undergarments
+        </p>
+        <h4 class="text-md font-semibold mb-1">Men's Fashion</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Men's Shirts, Men's T-Shirts
+        </p>
+        <h4 class="text-md font-semibold mb-1">Online Grocery Store</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Oil & Ghee, Basmati Rice, Dried Fruits, Chocolates, Mattresses
+        </p>
+        <h4 class="text-md font-semibold mb-1">Online Book Store</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          English Books, Islamic Books, History Books, English Literature Books, Kids Urdu Stories, Pride & Prejudice, Harry Potter Story Books, Namal Novel, Nimra Ahmed Novels
+        </p>
+        <h4 class="text-md font-semibold mb-1">Air Conditioners</h4>
+        <p class="text-sm text-gray-600">
+          Kenwood Ac, Haier Ac, Gree Ac, Dawlance Ac, Orient Ac, Ecostar Ac, Inverex Solar Ac, Pel Ac
+        </p>
+      </div>
+
+      <!-- Column 5 -->
+      <div>
+        <h4 class="text-md font-semibold mb-1">Top Mobile Phones</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Nokia G20, redmi 9, realme 7 pro, realme c15, realme c21, vivo v20s, realme c11 price in Pakistan, samsung galaxy 021 price in pakistan, Infinix Hot 10, Infinix Hot 8, Infinix Hot 9, Infinix Note 10 Pro, Infinix Note 7, Infinix Note 8, Infinix Smart 5, iPhone 11, iPhone 12, iPhone 12 Pro Max, iPhone 12 Pro, iPhone A15, iPhone A25, MI 10T, Nokia 105, Oppo A15, Oppo A53, Oppo A54, Infinix Zero X Pro, Infinix Zero X Neo, Oppo F19, Oppo Reno 5, Oppo Reno 5 Pro, Xiaomi Poco M3 Pro, Realme 8, Realme Narzo 30A, Samsung A12, Samsung A51, Samsung Y33s, Samsung A52, Samsung Tab A7 Lite, Samsung A52s, Samsung Tab A7, Samsung A52s, Samsung Tab A7 Lite
+        </p>
+        <h4 class="text-md font-semibold mb-1">Shop Worldwide with Lazada</h4>
+        <p class="text-sm text-gray-600 mb-2">
+          Singapore, Malaysia, Philippines, Indonesia, Vietnam, Thailand
+        </p>
+        <h4 class="text-md font-semibold mb-1">Shop Worldwide with Miravia</h4>
+        <p class="text-sm text-gray-600">
+          Spain, Portugal
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+  <df-messenger
+   chat-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yLwT8TQ8aF0dMJfuD-LEC3WfUMeZHfzrZw&s"
+    chat-title="daraz"
+    agent-id="65deb50f-1ab1-4d98-8ae0-be3eace0ab32"
+    language-code="en"
+  ></df-messenger>
+  
+  <style>
+    df-messenger {
+     --df-messenger-bot-message: #878fac;
+     --df-messenger-button-titlebar-color: #7ecef1;
+     --df-messenger-chat-background-color: #fafafa;
+     --df-messenger-font-color: white;
+     --df-messenger-send-icon: #878fac;
+     --df-messenger-user-message: #479b3d;
+    }
+  </style>
+
+</body>
+</html>
