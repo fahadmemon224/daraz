@@ -3,9 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Daraz Clone - Home</title>
+  <title>Daraz </title>
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="shortcut icon" href="logo" type="image/x-icon">
   <style>
     .daraz-orange {
       color: #F85606;
@@ -56,10 +57,25 @@
     <img width="80" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yLwT8TQ8aF0dMJfuD-LEC3WfUMeZHfzrZw&s" alt="">
     <div class="logo">Daraz</div>
 
-    <div> <br><br>
-        <input style="align-items: center;" type="text" placeholder="search in daraz">
-        <button>Search</button>
-      </div>
+  <div class="flex justify-center items-center mt-10">
+  <input id="searchInput" type="text" placeholder="Search in Daraz" 
+    class="border border-gray-300 rounded-l-lg p-2 w-64 focus:outline-none focus:ring-2 focus:ring-blue-500">
+  
+  <button onclick="search()" 
+    class="bg-blue-500 text-white rounded-r-lg px-4 py-2 hover:bg-blue-600">
+    Search
+  </button>
+</div>
+
+<script>
+  function search() {
+    var query = document.getElementById('searchInput').value;
+    if (query.trim() !== '') {
+      window.location.href = 'https://www.daraz.pk/catalog/?q=' + encodeURIComponent(query);
+    }
+  }
+</script>
+
 
       <ul>
         <li>save more on app</li>
@@ -715,9 +731,11 @@
     </div>
   </section>
 
+   <!-- popup section -->
   <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
   <df-messenger
    chat-icon="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8yLwT8TQ8aF0dMJfuD-LEC3WfUMeZHfzrZw&s"
+    intent="WELCOME"
     chat-title="daraz"
     agent-id="65deb50f-1ab1-4d98-8ae0-be3eace0ab32"
     language-code="en"
