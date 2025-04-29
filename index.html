@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="shortcut icon" href="logo" type="image/x-icon">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
   <style>
     .daraz-orange {
       color: #F85606;
@@ -95,10 +99,76 @@
   </header>
 
   <!-- Hero Section -->
-  <section class="hero">
-   <img width="860" src="https://img.lazcdn.com/us/domino/1a5dceb9-f737-4720-9041-14a75f1c8013_PK-1976-688.jpg_2200x2200q80.jpg_.webp" alt="">
+ 
+
+  <!-- Fullscreen Slider Section -->
+  <section class="relative w-full h-100 overflow-hidden">
+    <div class="swiper w-full h-full">
+      <div class="swiper-wrapper">
+        <!-- Slide 1 -->
+        <div class="swiper-slide">
+          <img
+            src="bannar 2.webp"
+            alt="Slide 1"
+            class="w-full h-full object-cover rounded-none transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="swiper-slide">
+          <img
+            src="banner 1.webp"
+            alt="Slide 2"
+            class="w-full h-full object-cover rounded-none transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="swiper-slide">
+          <img
+            src="bannar 3.webp"
+            alt="Slide 3"
+            class="w-full h-full object-cover rounded-none transition-transform duration-500 hover:scale-105"
+          />
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination !bottom-5"></div>
+
+      <!-- Navigation Buttons -->
+      <div class="swiper-button-prev text-white" aria-label="Previous slide"></div>
+      <div class="swiper-button-next text-white" aria-label="Next slide"></div>
+    </div>
   </section>
 
+  <!-- Swiper.js JS CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- Swiper Initialization -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      effect: 'fade',
+      fadeEffect: { crossFade: true },
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+        renderBullet: function (index, className) {
+          return `<span class="${className}" aria-label="Go to slide ${index + 1}"></span>`;
+        },
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
   <!-- Products Grid -->
   <section class="products">
     <h2>Flash Sale</h2>
